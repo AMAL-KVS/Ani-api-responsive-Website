@@ -1,0 +1,320 @@
+body {
+    padding: 0%;
+  }
+  .navbar {
+    background-color: white !important;
+    z-index: 1;
+  }
+  .nav-item a {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+  }
+  .navbar-collapse a {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+  }
+  .navbar-collapse button {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+  }
+  .con2 {
+    text-align: center;
+  }
+  .con2 a {
+    text-decoration: none;
+  }
+  .con3 a {
+    text-decoration: none;
+  }
+  .con2 h1 {
+    font-weight: 800;
+    color: #4338ca;
+  }
+  .con2 h5 {
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+  }
+  .con2 h1:first-of-type {
+    color: black;
+    margin-bottom: 0%;
+  }
+  .con2 button {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: large;
+  }
+  .con2 h6 {
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-size: small;
+  }
+  .con3 h2 {
+    font-weight: 800;
+    font-family: Inter var, ui-sans-serif, system-ui, -apple-system,
+      BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+      sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+      Noto Color Emoji;
+  }
+  .con3 h5 {
+    font-weight: 400;
+  }
+  /* .card-body {
+    text-align: center;
+  } */
+  .card-body h5 {
+    font-family: "Inter", sans-serif;
+    font-size: small;
+    font-weight: 700;
+  }
+  .card-body h6 {
+    font-family: "Inter", sans-serif;
+    font-size: small;
+  }
+  .con6 {
+    height: 100px;
+  }
+  .button1:hover {
+    color: white;
+  }
+  .con7 {
+    text-align: center;
+  }
+  .con7 a {
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+  .con7 a {
+    font-family: "Inter", sans-serif;
+  }
+  .con7 h1 {
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+  }
+  .con7 h6 {
+    font-family: "Inter", sans-serif;
+  }
+  .con7-1 {
+    text-align: center;
+  }
+  .con7-1 h5 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: large;
+  }
+  .con7-1 h6 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: gray;
+  }
+  .con8 {
+    background-color: RGB(29, 78, 215);
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .con8 h1 {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+  }
+  .con8 h6 {
+    color: white;
+    font-family: "Inter", sans-serif;
+  }
+  .con8 button {
+    background-color: white;
+    color: #4338ca;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+  }
+  footer h5 {
+    font-family: "Inter", sans-serif;
+    font-size: 1em;
+    text-align: left;
+    margin-bottom: 1em;
+    font-weight: 700;
+  }
+  .page-footer li {
+    margin-bottom: 1em;
+    font-family: "Inter", sans-serif;
+    text-align: left;
+  }
+  .page-footer a {
+    text-decoration: none;
+    color: gray;
+    font-family: "Inter", sans-serif;
+  }
+  .footer-sub {
+    text-align: start;
+  }
+  #floatBtn {
+    margin-right: 1em;
+    margin-bottom: 1em;
+    z-index: 3;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    background-color: white;
+  }
+  #floatBtnSend {
+    margin-right: 1em;
+    margin-bottom: 1em;
+    z-index: 3;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    background-color: white;
+    display: none;
+  }
+  .floatbar {
+    margin-right: 5.5em;
+    margin-bottom: 1.5em;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    background-color: white;
+    z-index: 3;
+    display: block;
+  }
+  .floatchat {
+    margin-right: 3em;
+    margin-bottom: 1em;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    background-color: white;
+    z-index: 1;
+    width: 26%;
+    height: 83%;
+    border-radius: 1em;
+    display: none;
+  }
+  .floatchat h4 {
+    color: white;
+    margin-top: 0.2em;
+    font-family: "Alata", sans-serif;
+  }
+  .chatboxDownwrap:hover {
+    background-color: rgba(0, 0, 0, 0.363);
+    transition: all ease-out 0.5s;
+  }
+  .chathead {
+    width: 100%;
+    background-color: #4338ca;
+    height: 20%;
+  
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+  }
+  .greenDot {
+    font-weight: 700;
+    font-size: 1.8em;
+    color: rgb(17, 255, 17);
+  }
+  .GreenSpan {
+    color: white;
+    font-family: "Alata", sans-serif;
+  }
+  .respond {
+    font-family: "Alata", sans-serif;
+    border: transparent;
+  }
+  .respond:focus {
+    border: transparent;
+    outline: none;
+  }
+  .plain {
+    height: 20em;
+  }
+  .Singlechat {
+    height: 5em;
+    background-color: rgba(0, 0, 0, 0.068);
+    /* display: none; */
+  }
+  .Singlechat1 {
+    height: 1.5em;
+    background-color: rgba(0, 0, 0, 0.068);
+    display: none;
+  }
+  .Singlechat2 {
+    height: 1.5em;
+    background-color: rgba(0, 0, 0, 0.068);
+    display: none;
+  }
+  .Singlechat3 {
+    height: 1.5em;
+    background-color: rgba(0, 0, 0, 0.068);
+    display: none;
+  }
+  .Singlechat4 {
+    height: 1.5em;
+    background-color: rgba(0, 0, 0, 0.068);
+    display: none;
+  }
+  .Singlechat5 {
+    height: 1.5em;
+    background-color: rgba(0, 0, 0, 0.068);
+    display: none;
+  }
+  .Singlechat6 {
+    height: 1.5em;
+    background-color: rgba(0, 0, 0, 0.068);
+    display: none;
+  }
+  .Singlechat7 {
+    height: 1.5em;
+    background-color: rgba(0, 0, 0, 0.068);
+    display: none;
+  }
+  .Singlechat8 {
+    height: 1.5em;
+    background-color: rgba(0, 0, 0, 0.068);
+    display: none;
+  }
+  
+  @media (max-width: 769px) {
+    .page-footer li {
+      margin-bottom: 1em;
+      font-family: "Inter", sans-serif;
+      text-align: center;
+    }
+  
+    footer h5 {
+      font-family: "Inter", sans-serif;
+      font-size: 1em;
+      text-align: center;
+      margin-bottom: 1em;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+    .footer-sub {
+      text-align: center;
+    }
+  }
+  
+  @media (min-width: 767px) {
+    .navMenu li {
+      margin-left: 1em;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .signIn-button,
+    .navMenu1 {
+      display: none;
+    }
+    .navMenu {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      padding: 2em;
+    }
+    .button2 {
+      width: 100%;
+    }
+    .navMenu li {
+      text-align: left;
+    }
+    .navMenu li a {
+      color: black;
+    }
+  }
+  @media (min-width: 992px) {
+    .navMenu li {
+      margin-left: 4em;
+    }
+  }

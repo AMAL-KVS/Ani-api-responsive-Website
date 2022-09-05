@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnyAPI</title>
+    <link rel="icon" type="image/x-icon" href="asset/image/logo.svg">
+     <!-- ---------------------------------------------------------------------------------------------------------- -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <!-- ---------------------------------------------------------------------------------------------------------- -->
+ <link rel="stylesheet" href="style.css">
+ <!-- ---------------------------------------------------------------------------------------------------------- -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link
+     href="https://fonts.googleapis.com/css2?family=Abel&family=Alata&family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+     rel="stylesheet">
+ <!-- ---------------------------------------------------------------------------------------------- -->
+ <script src="https://kit.fontawesome.com/d689182495.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container-lg mt-2 sticky-top ">
+    <nav class="navbar navbar-expand-md navbar-light bg-light ">
+        <a class="navbar-brand" href="#">
+            <img src="asset/logo.svg" width="40" height="40" alt="">
+        </a>
+        <button class="navbar-toggler border-primary " type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse navMenu rounded" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ml-auto mx-md-auto mt-1 mb-2">
+                <li class="nav-item active d-flex d-md-inline ">
+                    <a class="navbar-brand d-md-none" href="#">
+                        <img src="lightning-svgrepo-com (1).svg" width="30" height="30" alt="">
+                    </a>
+                    <a class="nav-link mr-auto mr-md-4 text-secondary mt-1" href="#">Get Started</a>
+                </li>
+                <li class="nav-item active d-flex d-md-inline">
+                    <a class="navbar-brand d-md-none" href="#">
+                        <img src="pointer-svgrepo-com (1).svg" width="30" height="30" alt="">
+                    </a>
+                    <a class="nav-link mr-md-4 text-secondary mt-1" href="#">Marketplace</a>
+                </li>
+                <li class="nav-item active navMenu1">
+                    <a class="nav-link mr-md-4 text-secondary" href="#">Docs</a>
+                </li>
+                <li class="nav-item active d-flex d-md-inline">
+                    <a class="navbar-brand  d-md-none" href="#">
+                        <img src="go-yellow-svgrepo-com.svg" width="30" height="30" alt="">
+                    </a>
+                    <a class="nav-link mr-md-4 text-secondary mt-1" href="#">Plans</a>
+                </li>
+                <li class="nav-item active navMenu1">
+                    <a class="nav-link mr-md-4 text-secondary" href="#">Blog</a>
+                </li>
+            </ul>
+        </div>
+
+            <a class="nav-link mr-3 text-secondary signIn-button" href="#">Sign in</a>
+            <button class="btn btn-primary button2" my-2 my-sm-0" type="submit">Sign up</button>
+
+        </div>
+    </nav>
+
+
+</div>
+
+<div class="container con2 pt-5">
+
+    <h1 class="mt-5 display-4 font-extrabold">The easiest way to</h1>
+
+
+
+    <h1 class="display-4 font-extrabold">automate routine workflows</h1>
+    <h5 class="text-secondary mt-3">Discover and connect your app to a list of powerful APIs. Browse the <a
+            href="">API</a></h5>
+    <h5 class="text-secondary"><a href="">Marketplace</a> to get started</h5>
+    <button class="btn btn-primary p-3 px-5 mt-4" my-2 my-sm-0" type="submit">Get started for free</button>
+    <h6 class="mt-4 text-secondary">No credit card required 🎉</h6>
+</div>
+<!-- float-button--------- -->
+<div class="position-fixed  end-0 bottom-0 floatchat    " id="chatScreen">
+    <div class="chathead d-flex justify-content-between p-4">
+        <div class="my-auto col-lg-2 ">
+            <img class="mx-auto my-auto " src="asset/image/user.png" width="50" height="50" alt="">
+        </div>
+        <div class=" d-lg-block  d-none my-auto col-7 ">
+            <h4 class="">Hi there👋</h4>
+        </div>
+        <div class="col-1"></div>
+        <div class="my-auto col-1 ">
+            <img class=" mx-auto my-auto " src="asset/image/options.png" width="20" height="20" alt="">
+        </div>
+        <div onclick="chatClose()" class=" my-auto col-lg-1 col-2 rounded-circle chatboxDownwrap d-flex p-1">
+            <img class="mx-auto my-auto " src="asset/image/arrow-down-sign-to-navigate.png" width="20" height="25" alt="">
+        </div>
+    </div>
+    <div class="w-100 d-flex justify-content-center bg-secondary pb-3">
+        <span class="greenDot ">.</span> <span class="mt-3 GreenSpan">We replay immediately</span>
+    </div>
+    <div class="container ">
+        <div class="plain w-100 ">
+            <div class="w-75 Singlechat mt-3 rounded-3 p-3 col-12">                
+                Hello👋 Would you like to take a closer look at our offer?
+            </div>
+            <div class="chatFlex w-100 d-flex flex-row-reverse"> 
+                 <div class=" Singlechat1  mt-3 ml-auto px-3 rounded-3 " id="SingleChat-1">
+                     <span id="InnerChat1" class="mx-auto"></span> 
+                </div>
+            </div>
+            <div class="chatFlex w-100 d-flex flex-row-reverse">
+                <div class=" Singlechat2  mt-3 ml-auto px-3 rounded-3 " id="SingleChat-2">
+                    <span id="InnerChat2" class="mx-auto"></span>
+                </div>
+            </div>
+            <div class="chatFlex w-100 d-flex flex-row-reverse">
+                <div class=" Singlechat3  mt-3 ml-auto px-3 rounded-3 " id="SingleChat-3">
+                    <span id="InnerChat3" class="mx-auto"></span>
+                </div>
+            </div>
+            <div class="chatFlex w-100 d-flex flex-row-reverse">
+                <div class=" Singlechat4  mt-3 ml-auto px-3 rounded-3 " id="SingleChat-4">
+                    <span id="InnerChat4" class="mx-auto"></span>
+                </div>
+            </div>
+            <div class="chatFlex w-100 d-flex flex-row-reverse">
+                <div class=" Singlechat5  mt-3 ml-auto px-3 rounded-3 " id="SingleChat-5">
+                    <span id="InnerChat5" class="mx-auto"></span>
+                </div>
+            </div>
+            <div class="chatFlex w-100 d-flex flex-row-reverse">
+                <div class=" Singlechat6  mt-3 ml-auto px-3 rounded-3 " id="SingleChat-6">
+                    <span id="InnerChat6" class="mx-auto"></span>
+                </div>
+            </div>
+            <div class="chatFlex w-100 d-flex flex-row-reverse">
+                <div class=" Singlechat7  mt-3 ml-auto px-3 rounded-3 " id="SingleChat-7">
+                    <span id="InnerChat7" class="mx-auto"></span>
+                </div>
+            </div>
+            <div class="chatFlex w-100 d-flex flex-row-reverse">
+                <div class=" Singlechat8  mt-3 ml-auto px-3 rounded-3 " id="SingleChat-8">
+                    <span id="InnerChat8" class="mx-auto"></span>
+                </div>
+            </div>
+
+
+        </div>
+        <hr class="mb-2">
+        <div>
+            <input type="text" id="msgInput" class="respond text-secondary w-75"
+                placeholder="Hit the buttons to respond">
+            <!-- <span class="respond text-secondary ">Hit the buttons to respond</span> -->
+        
+       </div>
+        <div class="">
+            <img class="mt-1" src="asset/image/smile.png" width="20" height="20" alt="">
+        </div>
+    </div>
+</div>
+
+
+<div class="position-fixed end-0 bottom-0  floatbar px-3 py-2 rounded-pill " id="floatBanner">
+    <span>Chat with
+        Us👋</span>
+</div>
+
+<div onclick="chatOpen()" id="floatBtn" class=" position-fixed end-0 bottom-0  floatBtn rounded-circle p-3">
+    <img class="mx-auto my-auto " src="asset/image/chat.png" width="30" height="30" alt="">
+</div>
+<div onclick="chatSend()" id="floatBtnSend" class=" position-fixed end-0 bottom-0  floatBtn rounded-circle p-3">
+    <img class="mx-auto my-auto " src="asset/image/send.png" width="30" height="30" alt="">
+</div>
+
+
+
+
+
+<div class="container con3 mt-5 pt-5">
+    <h2 class="mt-5 pt-5 font-extrabold ">Collection of powerful <a href="">RESTful APIs</a></h2>
+    <h5 class="mt-3 text-secondary">Create a form endpoint and connect it to the apps and plugins you already use
+        and love</h5>
+
+</div>
+
+
+<div class="container con4 mt-5">
+    <div class="row">
+        <div class="col-md">
+            <div class="card-body rounded border mb-5 d-flex">
+                <img class="" src="asset/image/email-logo.svg" width="40" height="40" alt="">
+                <div class="container-fluid ">
+                    <h5>Email validation</h5>
+                    <h6 class="text-secondary">Parse and validation email address</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="card-body rounded border mb-5 d-flex">
+                <img src="asset/image/xchange-logo.svg" width="40" height="40" alt="">
+                <div class="container-fluid">
+                    <h5>Free Currency Exchange and Forex</h5>
+                    <h6 class="text-secondary">Free & reliable real-time..</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="card-body rounded border mb-5 d-flex">
+                <img src="asset/image/g-sheet-logo.svg" width="40" height="40" alt="">
+                <div class="container-fluid">
+                    <h5>Google sheets</h5>
+                    <h6 class="text-secondary">Read, write, and format Google</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md">
+            <div class="card-body rounded border mb-5 d-flex">
+                <img src="asset/image/Holidays-logo.svg" width="40" height="40" alt="">
+                <div class="container-fluid">
+                    <h5>Holidays</h5>
+                    <h6 class="text-secondary">Dates of holidays for various....</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="card-body rounded border mb-5 d-flex">
+                <img src="asset/image/iban-logo.svg" width="40" height="40" alt="">
+                <div class="container-fluid">
+                    <h5>IBAN Validation</h5>
+                    <h6 class="text-secondary">Validate and chech IBAN codes</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="card-body rounded border mb-5 d-flex">
+                <img src="asset/image/ip-map-logo.svg" width="40" height="40" alt="">
+                <div class="container-fluid">
+                    <h5>IP Geolocation</h5>
+                    <h6 class="text-secondary">Get the location, city, country of a..</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a class="">Or browser API Marketplace →</a>
+
+</div>
+<div class="container con6 mt-5 d-sm-none d-lg-block"></div>
+<div class="container mt-5 ">
+</div>
+
+<div class="container con7 mb-5">
+    <h6><a href="">SERVERLESS</a></h6>
+    <h1 class="font-extrabold">Simple and powerful</h1>
+    <h5 class="text-secondary mt-2">AnyAPI is a highly scalable and customizable platform offering great user
+        experience
+    </h5>
+</div>
+<div class="container mb-5">
+    <div class="row">
+        <div class="col-md mt-5">
+            <div class="card border-0 con7-1">
+                <img src="asset/image/serverless.png" class="mx-auto" width="100" height="100" alt="">
+                <h5 class="mx-auto">Serverless</h5>
+                <h6 class="mx-auto">AnyAPI is hosted on powerful serverless platforms to ensure maximum availability
+                </h6>
+
+            </div>
+        </div>
+        <div class="col-md mt-5">
+            <div class="card border-0 con7-1">
+                <img src="asset/image/secure.png" class="mx-auto" width="100" height="100" alt="">
+                <h5 class="mx-auto">Secure</h5>
+                <h6 class="mx-auto">Protected your API endpoints using signing keys and advanced DDoS protection
+                </h6>
+
+            </div>
+        </div>
+        <div class="col-md mt-5">
+            <div class="card border-0 con7-1">
+                <img src="asset/image/integration.png" class="mx-auto" width="100" height="100" alt="">
+                <h5 class="mx-auto">Easy to itegrate</h5>
+                <h6 class="mx-auto">AnyAPI endpoints are well documented and easy to use</h6>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md mt-5">
+            <div class="card border-0 con7-1">
+                <img src="asset/image/support.png" class="mx-auto" width="100" height="100" alt="">
+                <h5 class="mx-auto">24/7 Support</h5>
+                <h6 class="mx-auto">Need help? We offer 24/7 priority support and monitoring</h6>
+
+            </div>
+        </div>
+        <div class="col-md mt-5">
+            <div class="card border-0 con7-1">
+                <img src="asset/image/updates.png" class="mx-auto" width="100" height="100" alt="">
+                <h5 class="mx-auto">Updates</h5>
+                <h6 class="mx-auto">We regularly update our codebase and add new API endpoints</h6>
+
+            </div>
+        </div>
+        <div class="col-md mt-5">
+            <div class="card border-0 con7-1">
+                <img src="asset/image/developers.png" class="mx-auto" width="100" height="100" alt="">
+                <h5 class="mx-auto">Developer Friendly</h5>
+                <h6 class="mx-auto ">All API endpoints are documented and you can try them in your
+                    dashboard</h6>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container con6  mt-5 d-sm-none d-lg-block "></div>
+<div class="container">
+    <div class="container mt-5 con8 rounded d-lg-flex shadow p-3 mb-5 body rounded">
+        <div class="container-fluid p-lg-5 p-sm-0">
+            <h1 class="mt-5 mx-5">Ready to dive in?</h1>
+            <h1 class="mx-5">Create your API key for free!</h1>
+            <h6 class="mt-2 mb-3 mx-5">Create your API key and integrate it with your app within minutes</h6>
+            <button class="btn button1 btn-primary p-3 px-5 mt-4 mx-5" my-2 my-sm-0" type="submit">Get your API
+                key</button>
+        </div>
+
+        <img class="image-fluid mt-lg-5 w-100 d-md-block d-lg-none " src="asset/image/rocket.svg" height="100%" alt="">
+        <img class="image-fluid mt-lg-5 w-50 d-none  d-lg-block " src="asset/image/rocket.svg" height="100%" alt="">
+
+    </div>
+</div>
+<div class="container mt-5 ">
+    <footer class="page-footer font-small blue pt-4 mt-5">
+
+
+        <div class="container-fluid text-center text-md-left">
+
+            <div class="row">
+
+
+                <div class="col-md-3 col-lg-4  mt-md-0 mt-3 footer-sub">
+
+
+                    <a class="navbar-brand " href="#">
+                        <img class="ml-auto" src="asset/image/logo.svg" width="40" height="40" alt="">
+                    </a>
+                    <p class="text-secondary mt-3">The easiest way to automate routine workflows</p>
+
+                    <a class="navbar-brand" href="#">
+                        <img class="" src="asset/image/icons8-twitter-60.png" width="30" height="30" alt="">
+                    </a><a class="navbar-brand" href="#">
+                        <img class="" src="asset/image/icons8-github-60.png" width="30" height="30" alt="">
+                    </a>
+
+                </div>
+
+
+                <hr class="clearfix w-100 mt-3 d-md-none ">
+
+
+                <div class="col-md-3 col-lg-2 mb-md-0 mb-3">
+
+
+                    <h5 class="text-uppercase text-secondary">Resourses</h5>
+
+                    <ul class="list-unstyled ">
+                        <li>
+                            <a href="#!">Docs</a>
+                        </li>
+                        <li>
+                            <a href="#!">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#!">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#!">Marketplace</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-3 col-lg-2 mb-md-0 mb-3">
+
+
+                    <h5 class="text-uppercase text-secondary">Company</h5>
+
+                    <ul class="list-unstyled">
+
+                        <li>
+                            <a href="#!">GitHub</a>
+                        </li>
+                        <li>
+                            <a href="#!">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#!">API Status</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-3 col-lg-2 mb-md-0 mb-3">
+
+
+                    <h5 class="text-uppercase text-secondary">LEGAL</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Terms</a>
+                        </li>
+                        <li>
+                            <a href="#!">Refund Policy</a>
+                        </li>
+                        <li>
+                            <a href="#!">Privacy Policy</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <hr class="mt-4">
+        <div class="footer-copyright text-secondary text-center py-3">© 2022 AnyAPI. All rights reserved.
+
+        </div>
+
+
+    </footer>
+</div>
+ <!------------------------------------------------------------------------------------------------ -->
+ <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+ integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+ crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+ crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+ crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
